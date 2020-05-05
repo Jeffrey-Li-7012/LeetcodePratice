@@ -50,8 +50,9 @@ Explanation: s can be split into "RL", "RRRLLRLL", since each substring contains
 
 ### Algorithm
 
-1. 从左到右扫描输入的String，如果遇到“L”则balanced string的字符计数器加,1，遇到“R”就减1
-2. 一旦balanced string的字符计数器的值变为0，表明已经扫描到一个balanced string了，记录结果的计数器就加一
+1. 创建两个计数器，`result` 和 `balance_variable` ，其中`result` 用来记录遇到的balanced string的个数，而`balance_variable` 用来记录在扫描过程中，遇到“L”比遇到“R”多多少个。
+2. 从左到右扫描输入的String，如果遇到“L”则`balance_variable`加,1，遇到“R”就减1。
+3. 一旦`balance_variable`变为0，表明已经扫描到一个balanced string了，记录`result`就加1。
 
 
 
@@ -76,3 +77,7 @@ class Solution:
         return result
 ```
 
+#### Complexity Analysis:
+
+- Time Complexity: $O(n)$ , where $n$ is the length of the input string. Because you scan through the whole input string.
+- Space Complexity:  $O(n)$, where n is the length of the input string. Because you just need to store the string.
