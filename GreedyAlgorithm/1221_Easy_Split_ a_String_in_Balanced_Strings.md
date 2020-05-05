@@ -1,6 +1,6 @@
 ## 1221. Split a String in Balanced Strings-EASY
 
-[Original Question Link]: https://leetcode.com/problems/split-a-string-in-balanced-strings/
+[Leetcode 1221]: https://leetcode.com/problems/split-a-string-in-balanced-strings/	" Original Link"
 
 
 
